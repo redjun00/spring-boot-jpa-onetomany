@@ -18,16 +18,16 @@ public class Member {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private Collection<Phone> phone;
+    private Collection<Phone> phones;
 
     public Member(String name) {
         this.name = name;
     }
 
     public void addPhone(Phone p){
-        if( phone == null ){
-            phone = new ArrayList<Phone>();
+        if( phones == null ){
+            phones = new ArrayList<Phone>();
         }
-        phone.add(p);
+        phones.add(p);
     }
 }
