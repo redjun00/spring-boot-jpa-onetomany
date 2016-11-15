@@ -12,7 +12,6 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @JoinColumn(name = "member_id")
     private int seq;
 
     private String name;

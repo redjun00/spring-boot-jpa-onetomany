@@ -37,5 +37,7 @@ public class MemberTest {
         for( Member member : members ){
             System.out.println("***********" + member.toString());
         }
+
+        memberRepository.deleteAll();
     }
 }
